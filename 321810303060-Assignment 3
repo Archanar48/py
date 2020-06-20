@@ -1,0 +1,117 @@
+####1.   take 2 inputs from user and check whether they are equal or not
+
+a = input("Enter the first number: ")
+b = input("Enter the second number: ")
+if a == b:
+	print("Both inputs are equal")
+else:
+	print("Your input is not equal")
+#output 1:-  Enter the first number:3
+                     #Enter the second number:3
+                     #Both inputs are equal
+#output 2:-  Enter the first number:6
+                     #Enter the second number:3
+                     #Your input is not equal          
+	
+####2.	Take 3 inputs from user and check :
+         #  all are equal
+         # any of two are equal
+         #( use and or )
+         
+print("first number")
+first = input()
+print("second number")
+second = input()
+print("third number")
+third = input()
+all = first == second and second == third and third == first
+print("All are equal:",all)
+any = first == second or second == third or third == first
+print("Any of three are equal:",any)
+#output 1:-   first number
+                    # 2
+                    #second number
+                    # 2
+                    #third number
+                    # 2
+                    #All are equal: True
+                    #Any of three are equal: True
+#output 2:-  first number
+                    # 2
+                    #second number
+                    # 3
+                    #third number
+                    # 2
+                    #All are equal: False
+                    #Any of three are equal: True
+#output 3:-  first number
+                    # 2
+                    #second number
+                    # 3
+                    #third number
+                    # 4
+                    #All are equal: False
+                    #Any of three are equal: False
+ 
+####3.	Take two number and check whether the sum is greater than 5, less than 5 or equal to 5.
+print("Enter first number")
+first =int(input())
+print("Enter second number")
+second =int(input())
+sum = first+second
+print("Sum is greater than 5:",sum>5)
+print("Sum is equal to 5:",sum==5)
+print("Sum is lesser than 5:",sum<5)
+#output 1:-  Enter first number
+                   # 2
+                   #Enter second number
+                   # 3
+                   #Sum is greater than 5:False
+                   #Sum is equal to 5:True
+                   #Sum is lesser than 5:Flase
+#output 2:-  Enter first number
+                   # 5
+                   #Enter second number
+                   # 8
+                   #Sum is greater than 5:True
+                   #Sum is equal to 5:False
+                   #Sum is lesser than 5:Flase    
+#output 3:-  Enter first number
+                   # 2
+                   #Enter second number
+                   # 1
+                   #Sum is greater than 5:False
+                   #Sum is equal to 5:False
+                   #Sum is lesser than 5:True
+                   
+####4.	Suppose passing marks of a subject is 35. Take input of marks from user and check whether it is greater than passing marks or not.
+
+pm = 35
+print("Marks obtained:")
+marks =int(input())
+print("Marks is greater than passing marks:", marks>pm)  
+#output 1:-   Marks obtained:
+	                #90
+	                #Marks is greater than passing      marks: True    
+#output 2:-   Marks obtained:
+	                #28
+	                #Marks is greater than passing      marks: False  
+	                
+####5.	Write a Python function to find the Max of three numbers
+
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+num3 = int(input("Enter third number: "))
+if(num1 > num2) and (num1 > num3):
+	largest = num1
+elif(num2 > num1) and (num2 > num3):
+	largest = num2
+else:
+	largest = num3
+print("The largest number is:",largest)
+#output:-  Enter first number:5
+                #Enter second number:9
+                #Enter third number:3
+                #The largest number is:9
+
+	                 
